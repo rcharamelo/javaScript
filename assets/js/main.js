@@ -1,7 +1,6 @@
 
 /* SECCIÓN DEL NOMBRE DE AFILIADO PERMITIR SOLO TEXTO, NO NÚMEROS */
 let nombreAfiliado = prompt("Ingresar Nombre y Apellido del Afiliado");
-// console.log("Nombre de Afiliado:" , nombreAfiliado);
 
     while( !isNaN(nombreAfiliado)){
         nombreAfiliado = prompt("Ingresar Nombre y Apellido del Afiliado");
@@ -31,10 +30,6 @@ let edad = 2022 - parseInt(prompt("Ingrese Año de Nacimiento"));
         default: 
             console.log("La edad no es válida, el afiliado debe tener más de 18 y menos de 40 años");
     }
-            // console.log("Comisión por Segmento Joven " + comisionEdad);
-
-/*     if(edad <18){
-        alert("La persona tiene que ser mayor de edad para poder afiliarse");*/
 
 /* SECCIÓN DE COMISIÓN POR FRANJA DE INGRESOS DEL AFILIADO  */
 
@@ -43,7 +38,6 @@ let sueldo = parseInt(prompt("Ingrese el Sueldo Bruto percibido por el afiliado"
     while(isNaN(sueldo)){
     sueldo = parseInt(prompt("Ingrese el Sueldo Bruto percibido por el afiliado"));
     }
-    // console.log("Sueldo que percibe el afiliado " + sueldo);
 
     switch(true){
         case (sueldo >=1 && sueldo <=11547):
@@ -61,13 +55,11 @@ let sueldo = parseInt(prompt("Ingrese el Sueldo Bruto percibido por el afiliado"
             comisionSueldo = 3770;
         default: console.log("Ingrese un sueldo mayor a 0");
     }
-    // console.log("Comisión por franja Salarial " + comisionSueldo);
 
 /* SECCIÓN DE COMISIÓN POR ESTADO DE CUENTA POR MAIL, AGREGAR A LA VARIABLE 120 */
 
 let comisionMail = 0;
 let email= prompt("El afiliado tiene email?, Ingrese 'SI o NO' ");
-// console.log("El afiliado tiene email?:", email);
 
     switch(true){
         case (email =="si"): 
@@ -78,8 +70,6 @@ let email= prompt("El afiliado tiene email?, Ingrese 'SI o NO' ");
         break;
         default: alert("No ha ingresado una opción");
     }
-
-
 
 let comisionCI = 0;
 let ci = prompt("El afiliado tiene Cédula de Identidad?, Ingrese 'SI o NO' ");
@@ -94,8 +84,8 @@ let ci = prompt("El afiliado tiene Cédula de Identidad?, Ingrese 'SI o NO' ");
         default: alert("No ha ingresado una opción");
     }
 
+    //CONFIGURACIÓN DE LOS RESULTADOS
 
-    //CONFIGURACIÓN DEL PRINT
 //DATOS DEL AFILIADO
 console.log("***Los datos del Afiliado ingresados son***: ");
 console.log("Nombre y apellido: " + nombreAfiliado);

@@ -13,7 +13,6 @@ let edad = 2022 - parseInt(prompt("Ingrese Año de Nacimiento"));
     while( isNaN(edad)){
         edad = 2022 - parseInt(prompt("Ingrese Año de Nacimiento"));
     }
-    // console.log("Edad del Afiliado " + edad);
 
     switch(true){
         case (edad >=18 && edad <=20): 
@@ -59,26 +58,26 @@ let sueldo = parseInt(prompt("Ingrese el Sueldo Bruto percibido por el afiliado"
 /* SECCIÓN DE COMISIÓN POR ESTADO DE CUENTA POR MAIL, AGREGAR A LA VARIABLE 120 */
 
 let comisionMail = 0;
-let email= prompt("El afiliado tiene email?, Ingrese 'SI o NO' ");
+let email= prompt("El afiliado tiene email?, Ingrese 'SI o NO' ").toLocaleUpperCase();
 
     switch(true){
-        case (email =="si"): 
+        case (email =="SI"): 
             comisionMail = 120;
         break;
-        case (email =="no"):
+        case (email =="NO"):
             comisionMail = 0;
         break;
         default: alert("No ha ingresado una opción");
     }
 
 let comisionCI = 0;
-let ci = prompt("El afiliado tiene Cédula de Identidad?, Ingrese 'SI o NO' ");
+let ci = prompt("El afiliado tiene Cédula de Identidad?, Ingrese 'SI o NO' ").toLocaleUpperCase();
 
     switch(true){
-        case (ci =="si"): 
+        case (ci =="SI"): 
             comisionCI = 180;
         break;
-        case (ci =="no"):
+        case (ci =="NO"):
             comisionCI = 0;
         break;
         default: alert("No ha ingresado una opción");
